@@ -4,7 +4,7 @@
 }
 
 body {
-    height: 100vh;
+    height: 100%;
 } 
 
 #logo {
@@ -16,13 +16,13 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 15%;
     border-bottom: 1px solid black;
 }
 
 .main-name {
     font-size: 2.5rem;
     color: whitesmoke;
+    font-family: cursive;
 }
 
 .home-button {
@@ -128,7 +128,7 @@ header a {
 
 .title-info {
     padding-bottom: 2rem;
-    color: whitesmoke;
+    color: black;
 }
 
 .input-type {
@@ -138,17 +138,23 @@ header a {
     border: none;
 }
 
+::placeholder {
+    font-size: 1.3rem;
+    text-align: center;
+}
+
 .subs-button {
     height: 50px;
     background-color: red;
     color: whitesmoke;
     border-radius: 5px;
     border: none;
+    padding: 0 1rem;
+    margin-left: 1rem;
 }
 
 footer {
-    background-color: black;
-    height: 80%;
+    background-color: rgb(235, 181, 81);
 }
 
 .main-footer {
@@ -157,14 +163,14 @@ footer {
 }
 
 .text-heading {
-    color: white;
+    color: black;
     font-weight: bold;
     font-size: 1.7rem;
-    padding: 5rem 0;
+    padding: 3rem 0;
 }
 
 .links {
-    color: lightgrey;
+    color: black;
     padding-bottom: 1.5rem;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
@@ -174,8 +180,31 @@ footer {
     cursor: pointer;
 }
 
+.lnkd-logo {
+    height: 3rem;
+    margin-left: 1rem;
+}
+
 .copy-line {
-    color: lightgrey;
+    color: black;
     text-align: center;
-    margin-top: 6rem;    
+    margin-top: 2rem; 
+    padding-bottom: 2rem;
+}
+
+.location-logo {
+    height: 1.8rem;
+}
+
+.lctn-logo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tele {
+    margin-right: 5rem;
+}
+
+.tele1 {
+    margin-right: 1rem;
 }
