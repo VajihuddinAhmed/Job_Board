@@ -15,39 +15,42 @@
         <h1 class="page-title">Post a Job</h1>
         <div class="container">
             <div class="description-section">
+                <h2 id="success"></h2>
+                <h2 id="error"></h2>
                 <h3 class="description-title">Job title</h3>
-                <input type="text" placeholder="eg. Front End Developer" class="description-input">
+                <input type="text" placeholder="eg. Front End Developer" class="description-input" id="jobTitle">
                 <h3 class="description-title">Company</h3>
-                <input type="text" placeholder="eg. Radiant Technologies" class="description-input">
+                <input type="text" placeholder="eg. Radiant Technologies" class="description-input" id="company">
                 <h3 class="description-title">Job type</h3>
                 <div class="description-input form-lists">
                        <div class="radio-types">
-                            <input type="radio" name="job">
+                            <input type="radio" name="job" value="Full Time" required>
                             <label>Full Time</label>
                         </div>
                         <div class="radio-types">
-                            <input type="radio" name="job">
+                            <input type="radio" name="job" value="Part Time">
                             <label>Part Time</label>
                         </div>
                         <div class="radio-types">
-                            <input type="radio" name="job">
+                            <input type="radio" name="job" value="Freelance">
                             <label>Freelance</label>
                         </div>
                         <div class="radio-types">
-                            <input type="radio" name="job">
+                            <input type="radio" name="job" value="Internship">
                             <label>Internship</label>
                         </div>
                         <div class="radio-types">
-                            <input type="radio" name="job">
+                            <input type="radio" name="job" value="Temporary">
                             <label>Temporary</label>
                         </div>
                 </div>
                 <h3 class="description-title">Location</h3>
-                <input type="text" placeholder="Paris, France" class="description-input">
+                <input type="text" placeholder="Paris, France" class="description-input" id="location">
                 <h3 class="description-title">Job Description</h3>
-                <textarea rows="5" cols="20"class="description-input"></textarea>
+                <textarea rows="5" cols="20"class="description-input" id="jobDescription"></textarea>
+            
                 <div class="post-div">
-                    <button class="post-button">Post</button>
+                    <button class="post-button" id="post">Post</button>
                 </div>
             </div>
             <div class="contact-section">
@@ -109,5 +112,6 @@
             <h4 class="copy-line">Copyright © 2020 All rights reserved.</h4>
         </div>    
     </footer>
+    <script src="../js/postjob.js"></script>
 </body>
 </html>

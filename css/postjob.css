@@ -47,6 +47,20 @@ header a {
     margin-top: 1rem;
 }
 
+#success {
+    color: green;
+    display: flex;
+    justify-content: center;
+    padding-top: 1.5rem;
+}
+
+#error {
+    color: red;
+    display: flex;
+    justify-content: center;
+    padding-top: 1.5rem;
+}
+
 .description-section {
     width: 50%;
     margin-left: 5rem;
@@ -66,7 +80,7 @@ header a {
 }
 
 .description-title {
-    margin-top: 3.5rem;
+    margin-top: 2rem;
     margin-left: 3rem;
 }
 
