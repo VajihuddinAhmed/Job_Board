@@ -7,7 +7,7 @@
         <header class="main-header">
             <img src="/images/job_board_logo.png" alt="job_board_logo" id="logo">
             <h1 class="main-name">Job Board</h1>
-            <a href=""><h5 class="home-button">Home</h5></a>
+            <a href="index.html"><h5 class="home-button">Home</h5></a>
         </header>
         <main>
             <section>
@@ -16,8 +16,8 @@
                         <p>We have <span class="text-highlight">200,000</span> great job offers you deserve</p>
                         <h1 class="text">Largests Job Site In The World</h1>
                         <div>
-                            <button class="buttons blue">Post a Job</button>
-                            <button class="buttons orange">Want a Job</button>
+                            <button class="buttons blue" id="post-job">Post a Job</button>
+                            <button class="buttons orange" id="want-job">Apply Job</button>
                         </div>
                     </div>
                     <img src="/images/job-search.jpg" alt="job-search-image" class="main-image">
@@ -47,16 +47,24 @@
                 <div class="third-main__section">
                     <h3 class="subscribe-title">Subscribe to our Newsletter</h3>
                     <p class="title-info">For more information regarding jobs please subscribe to our community.</p>
-                    <div><input type="email" placeholder="Enter email address" class="input-type">
-                    <button class="subs-button">Subscribe</button></div>
+                    <div>
+                        <form>
+                            <input type="email" placeholder="Enter email address" class="input-type" id="subscribeInput" required>
+                            <button class="subs-button" id="subscribe">Subscribe</button>
+                        </form>
+                    </div>
                 </div>
             </section>
+        </main>
             <footer>
                 <div class="main-footer">
                     <div>
                         <h5 class="text-heading">About</h5>
                         <p class="links">Job Board serve as the modern equivalent <br> of classified ads by compiling and<br> listing local openings.</p> 
                         <p class="links">Additional resources like career coaching, <br>resume tailoring, and blog posts full of <br>helpful tips.</p>
+                        <img src="/images/linkedin logo.svg" alt="linkedin-logo" class="lnkd-logo">
+                        <img src="/images/fb logo.svg" alt="facebook-logo" class="lnkd-logo">
+                        <img src="/images/twitter logo.svg" alt="twitter-logo" class="lnkd-logo">
                     </div>
                     <div>
                         <h5 class="text-heading">Employers</h5>
@@ -77,18 +85,24 @@
                     </div>
                     <div>
                         <h5 class="text-heading">Have a Question?</h5>
-                        <p class="links">20 Rue du Poitou, Villejuif, <br> 94550, Paris, France
-                        </p>
-                        <p class="links">+3366928966</p>
-                        <p class="links">admin@jobboard.com</p>
+                        <div class="lctn-logo">
+                            <img src="/images/location logo.svg" alt="location-logo" class="location-logo">
+                            <p class="links">20 Rue du Poitou, Villejuif, <br> 94550, Paris, France</p>
+                        </div>
+                        <div class="lctn-logo tele">
+                            <img src="/images/tele logo.svg" alt="telephone-logo" class="location-logo">
+                            <p class="links">+3366928966</p>
+                        </div>
+                        <div class="lctn-logo tele1">
+                            <img src="/images/gmail logo.svg" alt="mail-logo" class="location-logo">
+                            <p class="links">admin@jobboard.com</p>
+                        </div>
                     </div>
                 </div>
                 <div>
                     <h4 class="copy-line">Copyright © 2020 All rights reserved.</h4>
-                </div>
-                    
-                
+                </div>    
             </footer>
-        </main>
+        <script src="/js/index.js"></script>
     </body>
 </html>

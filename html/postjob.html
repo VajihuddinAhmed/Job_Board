@@ -1,0 +1,117 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post a Job</title>
+    <link rel="stylesheet" href="../css/postjob.css">
+</head>
+<body>
+    <header class="main-header">
+        <img src="../images/job_board_logo.png" alt="job_board_logo" id="logo">
+        <h1 class="main-name">Job Board</h1>
+        <a href="../index.html"><h5 class="home-button">Home</h5></a>
+    </header>
+    <main>
+        <h1 class="page-title">Post a Job</h1>
+        <div class="container">
+            <div class="description-section">
+                <h2 id="success"></h2>
+                <h2 id="error"></h2>
+                <h3 class="description-title">Job title</h3>
+                <input type="text" placeholder="eg. Front End Developer" class="description-input" id="jobTitle">
+                <h3 class="description-title">Company</h3>
+                <input type="text" placeholder="eg. Radiant Technologies" class="description-input" id="company">
+                <h3 class="description-title">Job type</h3>
+                <div class="description-input form-lists">
+                       <div class="radio-types">
+                            <input type="radio" name="job" value="Full Time" required>
+                            <label>Full Time</label>
+                        </div>
+                        <div class="radio-types">
+                            <input type="radio" name="job" value="Part Time">
+                            <label>Part Time</label>
+                        </div>
+                        <div class="radio-types">
+                            <input type="radio" name="job" value="Freelance">
+                            <label>Freelance</label>
+                        </div>
+                        <div class="radio-types">
+                            <input type="radio" name="job" value="Internship">
+                            <label>Internship</label>
+                        </div>
+                        <div class="radio-types">
+                            <input type="radio" name="job" value="Temporary">
+                            <label>Temporary</label>
+                        </div>
+                </div>
+                <h3 class="description-title">Location</h3>
+                <input type="text" placeholder="Paris, France" class="description-input" id="location">
+                <h3 class="description-title">Job Description</h3>
+                <textarea rows="5" cols="20"class="description-input" id="jobDescription"></textarea>
+            
+                <div class="post-div">
+                    <button class="post-button" id="post">Post</button>
+                </div>
+            </div>
+            <div class="contact-section">
+                <h2 class="contact-lists">Contact Info</h2>
+                <h4 class="contact-lists">Address</h4>
+                <p class="info">20 Rue du Poitou, Villejuif, <br> 94550, Paris, France</p>
+                <h4 class="contact-lists">Phone</h4>
+                <p class="info">+3366928966</p>
+                <h4 class="contact-lists">Email Address</h4>
+                <p class="info">admin@jobboard.com</p>
+            </div>
+            
+        </div>
+    </main>
+    <footer>
+        <div class="main-footer">
+            <div>
+                <h5 class="text-heading">About</h5>
+                <p class="links">Job Board serve as the modern equivalent <br> of classified ads by compiling and<br> listing local openings.</p> 
+                <p class="links">Additional resources like career coaching, <br>resume tailoring, and blog posts full of <br>helpful tips.</p>
+                <img src="../images/linkedin logo.svg" alt="linkedin-logo" class="lnkd-logo">
+                <img src="../images/fb logo.svg" alt="facebook-logo" class="lnkd-logo">
+                <img src="../images/twitter logo.svg" alt="twitter-logo" class="lnkd-logo">
+            </div>
+            <div>
+                <h5 class="text-heading">Employers</h5>
+                <p class="links">How it works</p>
+                <p class="links">Register</p>
+                <p class="links">Post a job</p>
+                <p class="links">Advance skill search</p>
+                <p class="links">Recruiting service</p>
+                <p class="links">Blog</p>
+                <p class="links">Faq</p>
+            </div>
+            <div>
+                <h5 class="text-heading">Workers</h5>
+                <p class="links">How they work</p>
+                <p class="links">Employer search</p>
+                <p class="links">Advance search</p>
+                <p class="links">Number of workers</p>
+            </div>
+            <div>
+                <h5 class="text-heading">Have a Question?</h5>
+                <div class="lctn-logo">
+                    <img src="../images/location logo.svg" alt="location-logo" class="location-logo">
+                    <p class="links">20 Rue du Poitou, Villejuif, <br> 94550, Paris, France</p>
+                </div>
+                <div class="lctn-logo tele">
+                    <img src="../images/tele logo.svg" alt="telephone-logo" class="location-logo">
+                    <p class="links">+3366928966</p>
+                </div>
+                <div class="lctn-logo tele1">
+                    <img src="../images/gmail logo.svg" alt="mail-logo" class="location-logo">
+                    <p class="links">admin@jobboard.com</p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <h4 class="copy-line">Copyright © 2020 All rights reserved.</h4>
+        </div>    
+    </footer>
+    <script src="../js/postjob.js"></script>
+</body>
+</html>
