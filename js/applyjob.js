@@ -1,4 +1,5 @@
 const url = 'https://my-json-server.typicode.com/VajihuddinAhmed/Job_Board_API/Available-Jobs';
+const postUrl = 'https://my-json-server.typicode.com/VajihuddinAhmed/Job_Board_API/postjobs';
 
 fetch(url)
 .then((resp) => resp.json())
@@ -75,10 +76,24 @@ fetch(url)
             const submit = document.querySelector('#start')
             submit.addEventListener('click', () => {
                 const emailValue = document.querySelector('#mail').value
-                localStorage.setItem('User Email', emailValue)
+                // localStorage.setItem('User Email', emailValue)
                 document.querySelector('#mail').value = ''
                 const uploadFile = document.querySelector('#file').value
-                localStorage.setItem('User Resume', uploadFile)
+                // localStorage.setItem('User Resume', uploadFile)
+
+                let postData = {
+                    userEmail: emailValue,
+                    userResume: uploadFile
+                }
+
+                fetch(postUrl, {
+                    method: 'POST',
+                    body: JSON.stringify(postData),
+                    headers: {"Content-type": "application/json; charset=UTF-8"}
+                }).then(response => response.json()) 
+                .then(json => console.log(json))
+                .catch(err => console.log(err));
+
                 document.querySelector('#file').value = '' 
                 modal.classList.toggle("show-modal");
                 const successJob = document.querySelector('#success-job')
