@@ -64,11 +64,12 @@ header a {
 
 .buttons {
     padding: 0.8rem;
-    width: 7rem;
+    width: 10rem;
     color: white;
     border-radius: 5px;
     box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.5);
     margin-right: 10px;
+    font-size: 1.2rem;
 }
 
 .blue {
@@ -101,8 +102,7 @@ header a {
     height: 5rem;
     width: 6rem;
     padding-top: 3rem;
-    padding-left: 3rem;
-    
+    padding-left: 3rem;   
 }
 
 .logo-title {

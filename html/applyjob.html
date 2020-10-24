@@ -13,10 +13,21 @@
     </header>
     <main>
         <h1 class="head-title">Available Jobs</h1>
-        <div id="job-list">
-
+        <h2 id="success-job"></h2>
+        <div id="job-list"></div>
+        <div class="modal">
+            <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <div class="modal-styles">
+                    <h3 class="modal-heading"><span id="apply"></span></h3>
+                    <p class="subheading">Email</p>
+                    <input type="email" placeholder="Enter your email" class="input-mail" id="mail">
+                    <p class="subheading">Upload your resume</p>
+                    <input type="file" accept=".doc, .pdf" class="choose-file" id="file">
+                    <button class="start-button" id="start">Submit</button>
+                </div>
+            </div>
         </div>
-        
     </main>
     <footer>
         <div class="main-footer">

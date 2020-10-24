@@ -41,6 +41,15 @@ header a {
     font-family: cursive;
 }
 
+#success-job {
+    color: green;
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: center;
+    font-family: cursive;
+    font-weight: bold;
+}
+
 #jobTitle {
     font-size: 2.5rem;
     display: flex;
@@ -84,7 +93,7 @@ header a {
     padding: 2rem 0;
 }
 
-#applyJob {
+#applyJob0, #applyJob1, #applyJob2, #applyJob3, #applyJob4 {
     padding: 1rem 2rem;
     font-size: 1rem;
     background-color: rgb(107, 99, 255);
@@ -92,6 +101,93 @@ header a {
     border-radius: 5px;
     border: none;
     box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.1);
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 1rem 1.5rem;
+    width: 30rem;
+    border-radius: 0.5rem;
+}
+.close-button {
+    float: right;
+    width: 1.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    background-color: lightgray;
+}
+.close-button:hover {
+    background-color: darkgray;
+}
+.show-modal {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.modal-styles {
+    display: flex;
+    flex-direction: column;
+}
+
+.subheading {
+    padding: 1rem 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.input-mail {
+    padding: 0.6rem 0;
+}
+
+::placeholder {
+    padding: 1rem;
+    font-size: 1.2rem;
+}
+
+.choose-file {
+    padding: 1rem 0;
+}
+
+.modal-heading {
+    margin: 1.5rem 0;
+}
+
+.start-button {
+    width: 7rem;
+    padding: 1rem; 
+    background-color: #f3a725;
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.5);
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 1rem;    
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+.start-button:hover {
+    background-color: aqua;
 }
 
 
